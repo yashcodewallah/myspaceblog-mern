@@ -12,7 +12,7 @@ export default function Home() {
 console.log(search);
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("https://mernblog-bmj3.onrender.com/api/posts" + search);
+      const res = await axios.get("/posts" + search);
       setPosts(res.data);
     };
     fetchPosts();
