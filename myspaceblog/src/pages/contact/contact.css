@@ -1,0 +1,58 @@
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0%;
+    gap: 20px;
+    padding: 100px;
+    font-family: 'varela';
+    flex-grow: 1;
+    background-color: #f3f3f3;
+}
+.title{
+color: teal;
+}
+
+.contactContainer form{
+display: flex;
+flex-direction: column;
+margin-top: 50px;
+gap: 20px;
+}
+
+.formLabel{
+    color: rgb(2, 138, 138);
+}
+
+.textInput{
+    border-radius: 12px;
+    font-size: 20px;
+    padding: 5px 10px;
+    /* height: 50px; */
+}
+
+.submitButton{
+    margin-top: 20px;
+    color: teal;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    align-self: center;
+    height: 35px;
+    cursor: pointer;
+}
+.pageTitle{
+    color: grey;
+margin-bottom: 15px;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+.footerContainer{
+height: 50px;
+width: 100%;
+text-align: center;
+margin-top: 50px;
+}
