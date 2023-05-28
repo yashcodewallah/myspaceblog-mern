@@ -1,4 +1,4 @@
-import React, { useEffect,useState,useMemo } from 'react'
+import React, { useEffect,useState} from 'react'
 import axios from 'axios'
 import "./sidebar.css"
 import Pic1 from "./my-photo.jpg"
@@ -42,10 +42,10 @@ return (  <ul className='sidebar-list'>
             <div className='sidebar-item'>
                 <div className='sidebar-title'>FOLLOW US</div>
                 <div className='sidebar-social'>
-                <a href="https://github.com/yashcodewallah" target="_blank" className='link'><i className="top-icon fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/yashh.shxrma/" target="_blank" className='link'><i className="top-icon fa-brands fa-square-instagram"></i></a>
-        <a href=" https://www.linkedin.com/in/yash-sharma-22403120b/" target="_blank" className='link'>  <i className="top-icon fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/yashh__sharmaa" target="_blank" className='link'> <i className="top-icon fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/yashcodewallah" target="_blank" rel="noreferrer" className='link'><i className="top-icon fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/yashh.shxrma/" target="_blank" className='link' rel="noreferrer"><i className="top-icon fa-brands fa-square-instagram"></i></a>
+        <a href=" https://www.linkedin.com/in/yash-sharma-22403120b/" target="_blank" className='link' rel="noreferrer" >  <i className="top-icon fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/yashh__sharmaa" target="_blank" className='link' rel="noreferrer"> <i className="top-icon fa-brands fa-twitter"></i></a>
                 </div>
             </div>
 

@@ -15,10 +15,10 @@ export default function Topbar() {
   return (
     <div className='tb-cont'>
       <div className='tb-lf'>
-        <a href="https://github.com/yashcodewallah" target="_blank" className='link'><i className="top-icon fa-brands fa-github"></i></a>
-        <a href="https://www.instagram.com/yashh.shxrma/" target="_blank" className='link'><i className="top-icon fa-brands fa-square-instagram"></i></a>
-        <a href=" https://www.linkedin.com/in/yash-sharma-22403120b/" target="_blank" className='link'>  <i className="top-icon fa-brands fa-linkedin"></i></a>
-        <a href="https://twitter.com/yashh__sharmaa" target="_blank" className='link'> <i className="top-icon fa-brands fa-twitter"></i></a>
+        <a href="https://github.com/yashcodewallah" target="_blank" className='link' rel="noreferrer"><i className="top-icon fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/yashh.shxrma/" target="_blank" className='link' rel="noreferrer"><i className="top-icon fa-brands fa-square-instagram"></i></a>
+        <a href=" https://www.linkedin.com/in/yash-sharma-22403120b/" target="_blank" className='link' rel="noreferrer">  <i className="top-icon fa-brands fa-linkedin"></i></a>
+        <a href="https://twitter.com/yashh__sharmaa" target="_blank" className='link' rel="noreferrer"> <i className="top-icon fa-brands fa-twitter"></i></a>
       </div>
 
       <div className='tb-mid'>

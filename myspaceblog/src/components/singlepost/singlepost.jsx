@@ -10,7 +10,7 @@ export default function Singlepost() {
     const { user } = useContext(Context)
     let { id } = useParams();
     const [post, setPost] = useState({})
-    const PF = "http://localhost:5000/images/"
+    const PF = "https://mernblog-bmj3.onrender.com/images/"
     const [title, setTitle] = useState("")
     const [updateMode, setUpdateMode] = useState(false)
     const [desc, setDesc] = useState("")
