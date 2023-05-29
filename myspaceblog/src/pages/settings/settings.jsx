@@ -3,7 +3,7 @@ import Sidebar from "../../components/sidebar/sidebar";
 import tempProfilePic from "../../components/images/temp.png"
 import { useContext, useState } from "react";
 import { Context } from "../../context/context";
-import axios from "axios";
+import { axiosInstance } from "../../config";
 
 export default function Settings() {
     const [file, setFile] = useState(null);
@@ -30,14 +30,14 @@ export default function Settings() {
             data.append("file", file);
             updatedUser.profilePic = filename;
             try {
-                await axios.post("/upload", data);
+                await axiosInstance.post("/upload", data);
             } catch (err) {
             }
         }
         try {
             console.log(user._id);
             console.log(updatedUser);
-            const res = await axios.put("/users/" + user._id, updatedUser);
+            const res = await axiosInstance.put("/users/" + user._id, updatedUser);
             console.log(res.data);
             setSuccess(true);
             dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
@@ -50,7 +50,7 @@ export default function Settings() {
 
     const handleDeleteAccount = async () => {
         try {
-            await axios.delete("/users/" + user._id, { data: { userId: user._id } })
+            await axiosInstance.delete("/users/" + user._id, { data: { userId: user._id } })
             dispatch({ type: "LOGOUT" });
             window.location.replace("/login")
         } catch (err) { }

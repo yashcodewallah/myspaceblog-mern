@@ -10,7 +10,7 @@ export default function Topbar() {
     dispatch({ type: "LOGOUT" });
   };
 
-  const PF="http://localhost:5000/images/"
+  const PF="https://mernblog-bmj3.onrender.com/images/"
 
   return (
     <div className='tb-cont'>

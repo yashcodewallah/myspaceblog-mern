@@ -1,15 +1,15 @@
 import React, { useEffect,useState} from 'react'
-import axios from 'axios'
 import "./sidebar.css"
 import Pic1 from "./my-photo.jpg"
 import {Link} from "react-router-dom" 
+import { axiosInstance } from '../../config'
 
 export default function Sidebar() {
     const [cat,setCat]=useState([])
 
    useEffect(()=>{
     const fetchCat=async ()=>{
-        const res=await axios.get("/categories")
+        const res=await axiosInstance.get("/categories")
       setCat(res.data)
         }
         fetchCat()

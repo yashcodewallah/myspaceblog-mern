@@ -1,7 +1,7 @@
 import { useContext,useState } from "react"
 import "./contact.css"
 import { Context } from "../../context/context"
-import axios from "axios";
+import { axiosInstance } from "../../config";
 
 export default function Contact() {
 const {user}=useContext(Context);
@@ -23,7 +23,7 @@ const handleSubmit=async (e)=>{
       message
   }
   try{
-await axios.post("/query/"+user._id,newQuery)
+await axiosInstance.post("/query/"+user._id,newQuery)
 window.location.replace("/")
 alert("new query sent")
 }
