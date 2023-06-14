@@ -9,7 +9,7 @@ export default function Header() {
 <div className='headertitle'>
     <div className='headertitlesm'>My SPACE</div>
     <div className='headertitlelg'>Blog</div>
-    <img className='header-img' src="https://img.freepik.com/free-photo/opened-sketchbook-near-laptop-garden_23-2147768838.jpg?w=740&t=st=1685632900~exp=1685633500~hmac=047a588d95c1de66cb966faa7dc9b26a228fcd8401d2e646bfe2e27e01d0a915" alt=""/>
+    <img className='header-img' src="https://images.pexels.com/photos/3711238/pexels-photo-3711238.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""/>
 </div>
 
     </div>
